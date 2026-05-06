@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>⭐is this your girl broo⭐</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  background:#0b0f1a;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+.page{
+  max-width:480px;
+  margin:auto;
+  min-height:100vh;
+}
+
+.title{
+  font-size:20px;
+  font-weight:700;
+  line-height:1.4;
+  padding:16px 15px 6px;
+}
+
+.desc{
+  color:#94a3b8;
+  font-size:13px;
+  line-height:1.5;
+  padding:0 15px 14px;
+}
+
+.video-wrap{
+  position:relative;
+  background:#000;
+  overflow:hidden;
+}
+
+video{
+  width:100%;
+  max-height:76vh;
+  display:block;
+  background:#000;
+  object-fit:contain;
+}
+
+.loading{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#cbd5e1;
+  font-size:14px;
+}
+
+.info{
+  padding:14px 15px 6px;
+  color:#cbd5e1;
+  font-size:14px;
+}
+
+.badge{
+  display:inline-block;
+  background:#172033;
+  color:#fff;
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  margin:0 15px 14px;
+}
+
+.footer{
+  text-align:center;
+  color:#64748b;
+  font-size:11px;
+  padding:18px 10px 24px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="title">
+This Clip Is Going Viral For A Reason 👀
+</div>
+
+<div class="desc">
+People are talking about this everywhere. Watch closely and see what happens next.
+</div>
+
+<div class="video-wrap">
+<div class="loading" id="loading">Loading video...</div>
+
+<video
+id="player"
+controls
+autoplay
+muted
+playsinline
+preload="metadata"
+controlsList="nodownload nofullscreen noremoteplayback"
+disablePictureInPicture
+disableRemotePlayback
+poster="https://via.placeholder.com/480x720?text=Loading"
+>
+<source id="videoSource" src="" type="video/mp4">
+</video>
+</div>
+
+<div class="info">
+Tap play if the video doesn't start automatically.
+</div>
+
+<div class="badge">
+🔥 Trending Now
+</div>
+
+<div class="footer">
+© ⭐is this your girl broo⭐
+</div>
+
+</div>
+
+<script>
+(function(){
+
+const params = new URLSearchParams(window.location.search);
+let video = params.get("v");
+
+if(!video){
+video = "https://cdn.videy.co/AAU8a62J1.mp4";
+}
+
+if(!video.startsWith("http")){
+video = "https://cdn.videy.co/" + video;
+}
+
+const player = document.getElementById("player");
+const source = document.getElementById("videoSource");
+const loading = document.getElementById("loading");
+
+source.src = video;
+player.load();
+
+player.play().catch(()=>{});
+
+player.addEventListener("loadeddata", function(){
+loading.style.display = "none";
+});
+
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+document.addEventListener("keydown", function(e){
+if(
+(e.ctrlKey && ['s','u','p'].includes(e.key.toLowerCase())) ||
+e.key === 'F12'
+){
+e.preventDefault();
+}
+});
+
+document.addEventListener("gesturestart", function(e){
+e.preventDefault();
+});
+
+player.addEventListener("webkitbeginfullscreen", function(){
+this.webkitExitFullscreen && this.webkitExitFullscreen();
+});
+
+})();
+</script>
+
+<!-- ✅ HISTATS (SUDAH DIPASANG RAPI DI BAWAH) -->
+<script type="text/javascript">
+var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5014589,4,9,110,60,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); 
+hs.type = 'text/javascript'; 
+hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();
+</script>
+<noscript>
+<a href="/" target="_blank">
+<img src="//sstatic1.histats.com/0.gif?5014589&101" alt="" border="0">
+</a>
+</noscript>
+
+</body>
+</html>
