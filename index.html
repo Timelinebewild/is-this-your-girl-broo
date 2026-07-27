@@ -6,73 +6,89 @@
 <title>⭐The Internet Be Wild⭐</title>
 
 <style>
-html, body {
-  margin: 0;
-  padding: 0;
-  background: #000;
-  font-family: Arial, Helvetica, sans-serif;
-  user-select: none;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
 }
 
-.page {
-  width: 100%;
-  background: #000;
+html,body{
+    width:100%;
+    min-height:100vh;
+    background:#000;
+    font-family:Arial,Helvetica,sans-serif;
+    user-select:none;
+    overflow-x:hidden;
 }
 
-/* Video */
-.video-box {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #000;
+body{
+    display:flex;
+    justify-content:center;
+    background:#000;
 }
 
-video {
-  width: 100%;
-  max-height: 78vh;
-  object-fit: contain;
-  background: #000;
+.page{
+    width:100%;
+    max-width:480px;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#000;
 }
 
-/* Tombol */
+.video-box{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+}
+
+video{
+    width:100%;
+    height:auto;
+    display:block;
+    background:#000;
+}
+
 .btn-area{
-  display:flex;
-  justify-content:center;
-  padding:18px;
-  background:#000;
+    width:100%;
+    padding:18px;
+    display:flex;
+    justify-content:center;
+    background:#000;
 }
 
 .watch-btn{
-  display:inline-block;
-  width:90%;
-  max-width:420px;
-  text-align:center;
-  background:#ff2b2b;
-  color:#fff;
-  text-decoration:none;
-  font-size:18px;
-  font-weight:bold;
-  padding:15px 20px;
-  border-radius:10px;
-  transition:.25s;
-  box-shadow:0 0 18px rgba(255,0,0,.35);
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    background:#ff2b2b;
+    padding:18px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(255,0,0,.45);
+    transition:.25s;
 }
 
 .watch-btn:hover{
-  background:#ff4747;
+    background:#ff4444;
 }
 
-/* Banner */
-.banner {
-  width:100%;
-  display:flex;
-  justify-content:center;
-  padding:12px 0 20px;
-  background:#000;
+.banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:12px 0 20px;
+    background:#000;
 }
 
-*{
-  -webkit-tap-highlight-color:transparent;
+/* Kalau konten pendek, banner tetap di bawah layar */
+.banner{
+    margin-top:auto;
 }
 </style>
 </head>
