@@ -1,209 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>⭐The Internet Be Wild⭐</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    -webkit-tap-highlight-color:transparent;
-}
-
-html,body{
-    margin:0;
-    padding:0;
-    width:100%;
-    min-height:100vh;
-    background:#000;
-    font-family:Arial,Helvetica,sans-serif;
-    overflow-x:hidden;
-}
-
-.page{
-    width:100%;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    background:#000;
-}
-
-.video-box{
-    width:100%;
-    flex:1;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#000;
-}
-
-video{
-    width:100%;
-    height:auto;
-    max-height:100vh;
-    display:block;
-    background:#000;
-    object-fit:contain;
-}
-
-.btn-area{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    padding:16px;
-    box-sizing:border-box;
-}
-
-.watch-btn{
-    width:100%;
-    max-width:420px;
-    background:#ff2b2b;
-    color:#fff;
-    text-align:center;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-    padding:16px;
-    border-radius:12px;
-    box-shadow:0 0 20px rgba(255,0,0,.35);
-}
-
-.banner{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:12px 0 25px;
-}
-
-/* Kalau konten pendek, banner tetap di bawah layar */
-.banner{
-    margin-top:auto;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden}
+.page{max-width:480px;margin:0 auto;background:#000}
+.video-box{padding:10px 0}
+video{width:100%;max-height:65vh;display:block;object-fit:contain;background:#000;border-radius:10px}
+.btn-area{padding:12px 16px 8px}
+.watch-btn{display:block;text-decoration:none;text-align:center;background:#ff2b2b;color:#fff;font-weight:bold;font-size:17px;padding:14px;border-radius:10px;box-shadow:0 0 18px rgba(255,0,0,.4)}
+.banner{display:flex;justify-content:center;padding:8px 0 15px}
 </style>
 </head>
-
-<body oncontextmenu="return false">
-
+<body>
 <div class="page">
-
-    <!-- VIDEO -->
-    <div class="video-box">
-        <video
-            id="player"
-            controls
-            autoplay
-            playsinline
-            preload="metadata"
-            poster="https://i.imgur.com/1NerYzs.jpeg"
-            controlslist="nodownload nofullscreen noremoteplayback"
-            disablepictureinpicture
-            ondragstart="return false">
-
-            <source id="videoSource" src="" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <!-- BUTTON -->
-    <div class="btn-area">
-        <a class="watch-btn" href="https://www.facebook.com/groups/1132157707491028/">
-            ▶ Ｊｏｉｎ　Ｍｙ　Ｇｒｕｐ 💯
-        </a>
-    </div>
-
-    <!-- BANNER -->
-    <div class="banner">
-
-<script>
-atOptions = {
-    'key' : '696b9093f9648a0556d7688a9442aa72',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-};
-</script>
-
-<script src="https://brewdismaychest.com/696b9093f9648a0556d7688a9442aa72/invoke.js"></script>
-
-    </div>
-
+<div class="video-box">
+<video id="player" controls autoplay playsinline preload="metadata" poster="https://i.imgur.com/1NerYzs.jpeg" controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture>
+<source id="videoSource" src="" type="video/mp4">
+</video>
 </div>
-
-<!-- AUTO LOAD VIDEO -->
+<div class="btn-area">
+<a class="watch-btn" href="https://www.facebook.com/groups/1132157707491028/" target="_blank" rel="noopener">▶ Join My Group 💯</a>
+</div>
+<div class="banner">
 <script>
-(function () {
-
-    const params = new URLSearchParams(window.location.search);
-    let video = params.get("v");
-
-    if(video){
-
-        if(!video.startsWith("http")){
-            video="https://cdn.videy.co/"+video;
-        }
-
-        document.getElementById("videoSource").src=video;
-
-    }else{
-
-        document.getElementById("videoSource").src="https://cdn.videy.co/HAZ79zvC1.mp4";
-
-    }
-
-    document.getElementById("player").load();
-
-})();
+atOptions={'key':'696b9093f9648a0556d7688a9442aa72','format':'iframe','height':50,'width':320,'params':{}};
 </script>
-
-<!-- BASIC PROTECTION -->
+<script src="https://brewdismaychest.com/696b9093f9648a0556d7688a9442aa72/invoke.js"></script>
+</div>
+</div>
 <script>
-(function(){
-
-document.addEventListener("contextmenu",e=>e.preventDefault());
-
-document.addEventListener("dragstart",e=>e.preventDefault());
-
-document.addEventListener("keydown",function(e){
-
-if(e.key==="F12") e.preventDefault();
-
-if(e.ctrlKey&&e.shiftKey&&["I","J","C"].includes(e.key.toUpperCase()))
-e.preventDefault();
-
-if(e.ctrlKey&&["U","S","P"].includes(e.key.toUpperCase()))
-e.preventDefault();
-
-});
-
-})();
-</script> 
-
-<!-- Histats.com START -->
-<script type="text/javascript">
-var _Hasync = _Hasync || [];
-_Hasync.push(['Histats.start', '1,5040198,4,9,110,60,00011111']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-
-(function () {
-    var hs = document.createElement('script');
-    hs.type = 'text/javascript';
-    hs.async = true;
-    hs.src = '//s10.histats.com/js15_as.js';
-    (document.head || document.body).appendChild(hs);
-})();
+(()=>{const p=new URLSearchParams(location.search);let v=p.get('v');if(v){if(!v.startsWith('http'))v='https://cdn.videy.co/'+v;}else{v='https://cdn.videy.co/HAZ79zvC1.mp4';}
+document.getElementById('videoSource').src=v;document.getElementById('player').load();})();
 </script>
-
-<noscript>
-    <a href="/" target="_blank">
-        <img src="//sstatic1.histats.com/0.gif?5040198&101" alt="" border="0">
-    </a>
-</noscript>
-<!-- Histats.com END -->
-  
-</body>
-</html>
+<script>
+var _Hasync=_Hasync||[];
+_Hasync.push(['Histats.start','1,5040198,4,9,110,60,00011111']);
+_Hasync.push(['Histats.fasi','1']);
+_Hasync.push(['Histats.track_hits','']);
+(function(){var s=document.createElement('script');s.async=true;s.src='//s10.histats.com/js15_as.js';document.body.appendChild(s);})();
+</script>
+</body></html>
