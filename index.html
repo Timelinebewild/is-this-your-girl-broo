@@ -2,204 +2,202 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>⭐is this your girl broo⭐</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⭐The Internet Be Wild⭐</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
 }
 
-html,body{
-  background:#0b0f1a;
-  font-family:Arial,Helvetica,sans-serif;
-  color:#fff;
-  overflow-x:hidden;
+.page {
+  width: 100%;
+  background: #000;
 }
 
-.page{
-  max-width:480px;
-  margin:auto;
-  min-height:100vh;
+/* Video */
+.video-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000;
 }
 
-.title{
-  font-size:20px;
-  font-weight:700;
-  line-height:1.4;
-  padding:16px 15px 6px;
+video {
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  background: #000;
 }
 
-.desc{
-  color:#94a3b8;
-  font-size:13px;
-  line-height:1.5;
-  padding:0 15px 14px;
-}
-
-.video-wrap{
-  position:relative;
+/* Tombol */
+.btn-area{
+  display:flex;
+  justify-content:center;
+  padding:18px;
   background:#000;
-  overflow:hidden;
 }
 
-video{
-  width:100%;
-  max-height:76vh;
-  display:block;
-  background:#000;
-  object-fit:contain;
-}
-
-.loading{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  color:#cbd5e1;
-  font-size:14px;
-}
-
-.info{
-  padding:14px 15px 6px;
-  color:#cbd5e1;
-  font-size:14px;
-}
-
-.badge{
+.watch-btn{
   display:inline-block;
-  background:#172033;
+  width:90%;
+  max-width:420px;
+  text-align:center;
+  background:#ff2b2b;
   color:#fff;
-  font-size:12px;
-  padding:6px 10px;
-  border-radius:999px;
-  margin:0 15px 14px;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:bold;
+  padding:15px 20px;
+  border-radius:10px;
+  transition:.25s;
+  box-shadow:0 0 18px rgba(255,0,0,.35);
 }
 
-.footer{
-  text-align:center;
-  color:#64748b;
-  font-size:11px;
-  padding:18px 10px 24px;
+.watch-btn:hover{
+  background:#ff4747;
+}
+
+/* Banner */
+.banner {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:12px 0 20px;
+  background:#000;
+}
+
+*{
+  -webkit-tap-highlight-color:transparent;
 }
 </style>
 </head>
 
-<body>
+<body oncontextmenu="return false">
 
 <div class="page">
 
-<div class="title">
-This Clip Is Going Viral For A Reason 👀
+    <!-- VIDEO -->
+    <div class="video-box">
+        <video
+            id="player"
+            controls
+            autoplay
+            playsinline
+            preload="metadata"
+            poster="https://aceimg.com/upload/?f=tvcOTeMps.png"
+            controlslist="nodownload nofullscreen noremoteplayback"
+            disablepictureinpicture
+            ondragstart="return false">
+
+            <source id="videoSource" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="btn-area">
+        <a class="watch-btn" href="https://example.com">
+            ▶ Watch Full Video
+        </a>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner">
+
+<script>
+atOptions = {
+    'key' : '696b9093f9648a0556d7688a9442aa72',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+};
+</script>
+
+<script src="https://brewdismaychest.com/696b9093f9648a0556d7688a9442aa72/invoke.js"></script>
+
+    </div>
+
 </div>
 
-<div class="desc">
-People are talking about this everywhere. Watch closely and see what happens next.
-</div>
+<!-- AUTO LOAD VIDEO -->
+<script>
+(function () {
 
-<div class="video-wrap">
-<div class="loading" id="loading">Loading video...</div>
+    const params = new URLSearchParams(window.location.search);
+    let video = params.get("v");
 
-<video
-id="player"
-controls
-autoplay
-muted
-playsinline
-preload="metadata"
-controlsList="nodownload nofullscreen noremoteplayback"
-disablePictureInPicture
-disableRemotePlayback
-poster="https://via.placeholder.com/480x720?text=Loading"
->
-<source id="videoSource" src="" type="video/mp4">
-</video>
-</div>
+    if(video){
 
-<div class="info">
-Tap play if the video doesn't start automatically.
-</div>
+        if(!video.startsWith("http")){
+            video="https://cdn.videy.co/"+video;
+        }
 
-<div class="badge">
-🔥 Trending Now
-</div>
+        document.getElementById("videoSource").src=video;
 
-<div class="footer">
-© ⭐is this your girl broo⭐
-</div>
+    }else{
 
-</div>
+        document.getElementById("videoSource").src="https://cdn.videy.co/HAZ79zvC1.mp4";
 
+    }
+
+    document.getElementById("player").load();
+
+})();
+</script>
+
+<!-- BASIC PROTECTION -->
 <script>
 (function(){
 
-const params = new URLSearchParams(window.location.search);
-let video = params.get("v");
+document.addEventListener("contextmenu",e=>e.preventDefault());
 
-if(!video){
-video = "https://cdn.videy.co/AAU8a62J1.mp4";
-}
+document.addEventListener("dragstart",e=>e.preventDefault());
 
-if(!video.startsWith("http")){
-video = "https://cdn.videy.co/" + video;
-}
+document.addEventListener("keydown",function(e){
 
-const player = document.getElementById("player");
-const source = document.getElementById("videoSource");
-const loading = document.getElementById("loading");
+if(e.key==="F12") e.preventDefault();
 
-source.src = video;
-player.load();
-
-player.play().catch(()=>{});
-
-player.addEventListener("loadeddata", function(){
-loading.style.display = "none";
-});
-
-document.addEventListener("contextmenu", e => e.preventDefault());
-
-document.addEventListener("keydown", function(e){
-if(
-(e.ctrlKey && ['s','u','p'].includes(e.key.toLowerCase())) ||
-e.key === 'F12'
-){
+if(e.ctrlKey&&e.shiftKey&&["I","J","C"].includes(e.key.toUpperCase()))
 e.preventDefault();
-}
-});
 
-document.addEventListener("gesturestart", function(e){
+if(e.ctrlKey&&["U","S","P"].includes(e.key.toUpperCase()))
 e.preventDefault();
-});
 
-player.addEventListener("webkitbeginfullscreen", function(){
-this.webkitExitFullscreen && this.webkitExitFullscreen();
 });
 
 })();
 </script>
+<!-- Histats.com (div with counter) -->
+<div id="histats_counter"></div>
 
-<!-- ✅ HISTATS (SUDAH DIPASANG RAPI DI BAWAH) -->
+<!-- Histats.com START -->
 <script type="text/javascript">
-var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5014589,4,9,110,60,00011111']);
+var _Hasync = _Hasync || [];
+_Hasync.push(['Histats.start', '1,5040198,4,9,110,60,00011111']);
 _Hasync.push(['Histats.fasi', '1']);
 _Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); 
-hs.type = 'text/javascript'; 
-hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+
+(function () {
+    var hs = document.createElement('script');
+    hs.type = 'text/javascript';
+    hs.async = true;
+    hs.src = '//s10.histats.com/js15_as.js';
+    (document.head || document.body).appendChild(hs);
 })();
 </script>
-<noscript>
-<a href="/" target="_blank">
-<img src="//sstatic1.histats.com/0.gif?5014589&101" alt="" border="0">
-</a>
-</noscript>
 
+<noscript>
+    <a href="/" target="_blank">
+        <img src="//sstatic1.histats.com/0.gif?5040198&101" alt="" border="0">
+    </a>
+</noscript>
+<!-- Histats.com END -->
+  
 </body>
 </html>
