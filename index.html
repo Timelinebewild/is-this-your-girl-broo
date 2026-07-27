@@ -1,47 +1,214 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⭐The Internet Be Wild⭐</title>
+
+<title>⭐ The Internet Be Wild ⭐</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#000;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden}
-.page{max-width:480px;margin:0 auto;background:#000}
-.video-box{padding:10px 0}
-video{width:100%;max-height:65vh;display:block;object-fit:contain;background:#000;border-radius:10px}
-.btn-area{padding:12px 16px 8px}
-.watch-btn{display:block;text-decoration:none;text-align:center;background:#ff2b2b;color:#fff;font-weight:bold;font-size:17px;padding:14px;border-radius:10px;box-shadow:0 0 18px rgba(255,0,0,.4)}
-.banner{display:flex;justify-content:center;padding:8px 0 15px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+color:#fff;
+font-family:Arial,Helvetica,sans-serif;
+overflow-x:hidden;
+}
+
+.page{
+max-width:480px;
+margin:auto;
+background:#000;
+}
+
+/* Header */
+
+.hero{
+padding:20px 15px 15px;
+text-align:center;
+}
+
+.hero h1{
+font-size:30px;
+font-weight:900;
+line-height:1.1;
+letter-spacing:1px;
+text-transform:uppercase;
+color:#fff;
+text-shadow:0 0 15px rgba(255,255,255,.3);
+}
+
+.hero h1 span{
+display:block;
+font-size:42px;
+margin-top:6px;
+background:linear-gradient(90deg,#62d4ff,#008cff,#6be8ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+margin-top:12px;
+font-size:15px;
+line-height:1.6;
+color:#cfcfcf;
+}
+
+/* Video */
+
+.video-box{
+padding:0 10px;
+}
+
+video{
+width:100%;
+display:block;
+background:#000;
+border-radius:12px;
+object-fit:contain;
+max-height:65vh;
+}
+
+/* Button */
+
+.btn-area{
+padding:15px;
+}
+
+.watch-btn{
+display:block;
+text-decoration:none;
+text-align:center;
+padding:16px;
+font-size:19px;
+font-weight:bold;
+color:#fff;
+border-radius:12px;
+background:linear-gradient(135deg,#38b6ff,#005dff);
+box-shadow:0 0 20px rgba(0,140,255,.45);
+transition:.25s;
+}
+
+.watch-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 0 30px rgba(0,140,255,.8);
+}
+
+/* Banner */
+
+.banner{
+display:flex;
+justify-content:center;
+padding:5px 0 18px;
+}
 </style>
+
 </head>
 <body>
+
 <div class="page">
+
+<div class="hero">
+
+<h1>
+WELCOME TO
+<span>THE INTERNET BE WILD</span>
+</h1>
+
+<p>
+🔥 The funniest memes, viral videos, crazy moments and trending internet content are waiting for you.
+<br><br>
+👇 Watch today's featured clip below and join thousands of fans for daily updates.
+</p>
+
+</div>
+
 <div class="video-box">
-<video id="player" controls autoplay playsinline preload="metadata" poster="https://i.imgur.com/DqozoMc.jpeg" controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture>
+
+<video
+id="player"
+controls
+autoplay
+playsinline
+preload="metadata"
+poster="https://i.imgur.com/DqozoMc.jpeg"
+controlslist="nodownload nofullscreen noremoteplayback"
+disablepictureinpicture>
+
 <source id="videoSource" src="" type="video/mp4">
+
 </video>
+
 </div>
+
 <div class="btn-area">
-<a class="watch-btn" href="https://www.facebook.com/groups/1132157707491028/" target="_blank" rel="noopener">▶ Join My Group 💯</a>
+
+<a
+class="watch-btn"
+href="https://www.facebook.com/groups/1132157707491028/"
+target="_blank"
+rel="noopener">
+
+▶ Join My Group 💙
+
+</a>
+
 </div>
+
 <div class="banner">
+
 <script>
-atOptions={'key':'08bd20389d8717bcfa131b091c13cc71','format':'iframe','height':50,'width':320,'params':{}};
+atOptions={
+'key':'08bd20389d8717bcfa131b091c13cc71',
+'format':'iframe',
+'height':50,
+'width':320,
+'params':{}
+};
 </script>
+
 <script src="https://zealoushavoc.com/08bd20389d8717bcfa131b091c13cc71/invoke.js"></script>
+
 </div>
+
 </div>
+
 <script>
-(()=>{const p=new URLSearchParams(location.search);let v=p.get('v');if(v){if(!v.startsWith('http'))v='https://cdn.videy.co/'+v;}else{v='https://cdn.videy.co/HAZ79zvC1.mp4';}
-document.getElementById('videoSource').src=v;document.getElementById('player').load();})();
+(()=>{
+const p=new URLSearchParams(location.search);
+let v=p.get("v");
+
+if(v){
+if(!v.startsWith("http")){
+v="https://cdn.videy.co/"+v;
+}
+}else{
+v="https://cdn.videy.co/HAZ79zvC1.mp4";
+}
+
+document.getElementById("videoSource").src=v;
+document.getElementById("player").load();
+})();
 </script>
+
 <script>
 var _Hasync=_Hasync||[];
 _Hasync.push(['Histats.start','1,5040198,4,9,110,60,00011111']);
 _Hasync.push(['Histats.fasi','1']);
 _Hasync.push(['Histats.track_hits','']);
-(function(){var s=document.createElement('script');s.async=true;s.src='//s10.histats.com/js15_as.js';document.body.appendChild(s);})();
+
+(function(){
+var s=document.createElement('script');
+s.async=true;
+s.src='//s10.histats.com/js15_as.js';
+document.body.appendChild(s);
+})();
 </script>
-</body></html>
+
+</body>
+</html>
